@@ -269,29 +269,46 @@ Aplikasi dirancang responsive untuk berbagai ukuran layar:
    • Informasi lengkap
    • Quick access untuk edit
 
-🚀 DEPLOYMENT
-============
+🚀 DEPLOYMENT (RECOMMENDED - VERCEL)
+====================================
 
-1. Netlify Deployment:
-   • Build command: npm run build
-   • Publish directory: public/
-   • Environment variables configured
-   • Custom domain: datakaryawan.netlify.app
-   • Configuration file: netlify.toml
+QUICK DEPLOYMENT:
+1. Install Vercel CLI: npm i -g vercel
+2. Login: vercel login
+3. Deploy: vercel --prod
+4. Setup database: Follow database-setup.md
 
-2. Netlify Configuration:
-   • Publish directory: public (bukan dist)
-   • Build command: npm run build
-   • Redirects configured for Laravel routing
-   • Security headers enabled
-   • Cache optimization for static assets
+DETAILED STEPS:
 
-3. Database Configuration:
-   • Production database credentials
-   • SSL connection enabled
-   • Backup strategy implemented
+1. Database Setup (PlanetScale):
+   • Sign up: https://planetscale.com
+   • Create database: ujump_202507
+   • Get connection string
+   • Import Laravel migration
 
-4. Performance Optimization:
+2. Vercel Deployment:
+   • Install: npm i -g vercel
+   • Login: vercel login
+   • Deploy: vercel --prod
+   • Custom domain: datakaryawan.vercel.app
+   • Configuration: vercel.json
+
+3. Environment Variables:
+   • APP_ENV=production
+   • APP_DEBUG=false
+   • APP_URL=https://datakaryawan.vercel.app
+   • DB_CONNECTION=mysql
+   • DB_HOST=aws.connect.psdb.cloud
+   • DB_DATABASE=ujump_202507
+   • DB_USERNAME=ujump_202507
+   • DB_PASSWORD=P4ssword*$#123456
+
+4. Alternative Platforms:
+   • Railway: Connect GitHub repo
+   • Heroku: heroku create && git push heroku main
+   • Netlify: Configure build settings
+
+5. Performance Optimization:
    • Assets minified
    • Images optimized
    • Caching enabled
@@ -357,6 +374,14 @@ Aplikasi dirancang responsive untuk berbagai ukuran layar:
    • File backup
    • Version control
    • Disaster recovery
+
+📞 SUPPORT & CONTACT
+====================
+
+Untuk pertanyaan atau support teknis:
+• Email: it_team@ujumpindo.com
+• Subject: "Sistem Manajemen Karyawan - Support"
+• Response time: 24-48 hours
 
 📝 CHANGELOG
 ============
