@@ -270,20 +270,28 @@ Aplikasi dirancang responsive untuk berbagai ukuran layar:
    • Quick access untuk edit
 
 🚀 DEPLOYMENT
-=============
+============
 
 1. Netlify Deployment:
    • Build command: npm run build
    • Publish directory: public/
    • Environment variables configured
    • Custom domain: datakaryawan.netlify.app
+   • Configuration file: netlify.toml
 
-2. Database Configuration:
+2. Netlify Configuration:
+   • Publish directory: public (bukan dist)
+   • Build command: npm run build
+   • Redirects configured for Laravel routing
+   • Security headers enabled
+   • Cache optimization for static assets
+
+3. Database Configuration:
    • Production database credentials
    • SSL connection enabled
    • Backup strategy implemented
 
-3. Performance Optimization:
+4. Performance Optimization:
    • Assets minified
    • Images optimized
    • Caching enabled
