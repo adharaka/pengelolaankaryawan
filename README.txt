@@ -358,14 +358,6 @@ Aplikasi dirancang responsive untuk berbagai ukuran layar:
    • Version control
    • Disaster recovery
 
-📞 SUPPORT & CONTACT
-====================
-
-Untuk pertanyaan atau support teknis:
-• Email: it_team@ujumpindo.com
-• Subject: "Sistem Manajemen Karyawan - Support"
-• Response time: 24-48 hours
-
 📝 CHANGELOG
 ============
 
