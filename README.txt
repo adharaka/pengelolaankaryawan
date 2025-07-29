@@ -291,28 +291,42 @@ DETAILED STEPS:
    • Login: vercel login
    • Deploy: vercel --prod
    • Custom domain: datakaryawan.vercel.app
-   • Configuration: vercel.json
+   • Configuration: vercel.json (updated)
 
-3. Environment Variables:
+3. Vercel.com Deployment (Alternative):
+   • Go to: https://vercel.com
+   • Import GitHub repository
+   • Framework: Other
+   • Build Command: npm run build
+   • Output Directory: public
+   • Add Environment Variables
+
+4. Environment Variables (Required):
    • APP_ENV=production
    • APP_DEBUG=false
-   • APP_URL=https://datakaryawan.vercel.app
+   • APP_URL=https://pengelolaankaryawan.vercel.app
    • DB_CONNECTION=mysql
    • DB_HOST=aws.connect.psdb.cloud
+   • DB_PORT=3306
    • DB_DATABASE=ujump_202507
    • DB_USERNAME=ujump_202507
    • DB_PASSWORD=P4ssword*$#123456
 
-4. Alternative Platforms:
+5. Alternative Platforms:
    • Railway: Connect GitHub repo
    • Heroku: heroku create && git push heroku main
    • Netlify: Configure build settings
 
-5. Performance Optimization:
+6. Performance Optimization:
    • Assets minified
    • Images optimized
    • Caching enabled
    • CDN configured
+
+TROUBLESHOOTING:
+• If @vercel/php error: Use "vercel-php" in vercel.json
+• If build fails: Check environment variables
+• If database error: Verify PlanetScale connection
 
 🔒 SECURITY FEATURES
 ====================
